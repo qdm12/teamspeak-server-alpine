@@ -24,14 +24,13 @@ RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     tar xf teamspeak.tgz --strip-components=1 && \
     touch .ts3server_license_accepted && \
     rm -rf teamspeak.tgz CHANGELOG LICENSE libts3db_mariadb.so doc redist serverquerydocs tsdns *.sh && \
-    mkdir -p /data/logs && \
+    mkdir -p /data && \
     touch /data/ts3server.sqlitedb /data/query_ip_blacklist.txt /data/query_ip_whitelist.txt /data/logs/.keep && \
     rm -rf /var/cache/apk/*
-VOLUME /data
+VOLUME /data /teamspeak/logs
 RUN ln -s /data/ts3server.sqlitedb /teamspeak/ts3server.sqlitedb && \
     ln -s /data/query_ip_blacklist.txt /teamspeak/query_ip_blacklist.txt && \
-    ln -s /data/query_ip_whitelist.txt /teamspeak/query_ip_whitelist.txt && \
-    ln -s /teamspeak/logs /data/logs
+    ln -s /data/query_ip_whitelist.txt /teamspeak/query_ip_whitelist.txt
 ENV LD_LIBRARY_PATH=/teamspeak
 EXPOSE 9987/udp 10011/tcp 30033/tcp
 WORKDIR /teamspeak

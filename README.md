@@ -30,14 +30,14 @@ It is based on:
 
 ## Running it
 
-1. Launch the server:
+1. Launch the server (change `yourpath` and `yourpath2`):
 
     ```bash
     docker run -it --rm -p 9987:9987/udp -p 10011:10011/tcp -p 30033:30033/tcp \
-    -v /yourpath:/data qmcgaw/teamspeak3-alpine
+    -v /yourpath:/data -v /yourpath2:/teamspeak/logs qmcgaw/teamspeak3-alpine
     ```
 
-    You can also download  and use [*docker-compose.yml*](https://github.com/qdm12/teamspeak-server-alpine/blob/master/docker-compose.yml)
+    You can also download, edit and use [*docker-compose.yml*](https://github.com/qdm12/teamspeak-server-alpine/blob/master/docker-compose.yml)
 
 ## Connect to the server
 

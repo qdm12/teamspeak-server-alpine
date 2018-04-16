@@ -5,6 +5,7 @@ services:
         container_name: teamspeak
         volumes:
             - /yourpath:/data
+            - /yourpath2:/teamspeak/logs
         ports:
             - 9987:9987/udp
             - 10011:10011/tcp
