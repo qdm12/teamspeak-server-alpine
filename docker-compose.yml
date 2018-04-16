@@ -1,0 +1,13 @@
+version: '3'
+services:
+    teamspeak:
+        image: qmcgaw/teamspeak3-alpine
+        container_name: teamspeak
+        volumes:
+            - /yourpath:/data
+        ports:
+            - 9987:9987/udp
+            - 10011:10011/tcp
+            - 30033:30033/tcp
+        network_mode: bridge
+        restart: always
