@@ -32,7 +32,8 @@ VOLUME /data
 RUN ln -s /data/ts3server.sqlitedb /teamspeak/ts3server.sqlitedb && \
     ln -s /data/query_ip_blacklist.txt /teamspeak/query_ip_blacklist.txt && \
     ln -s /data/query_ip_whitelist.txt /teamspeak/query_ip_whitelist.txt && \
-    ln -s /data/logs /teamspeak/logs
+    ln -s /data/logs /teamspeak/logs && \
+    ln -s /data/logs/.keep /teamspeak/logs/.keep
 ENV LD_LIBRARY_PATH=/teamspeak
 EXPOSE 9987/udp 10011/tcp 30033/tcp
 WORKDIR /teamspeak

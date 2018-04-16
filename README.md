@@ -69,17 +69,17 @@ It is based on:
 
 1. In your Teamspeak client, follow the instructions as shown on the following pictures:
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client1.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client1.png?raw=true)
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client2.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client2.png?raw=true)
 
     Enter the Docker host LAN IP address as well as your admin token you previously copied.
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client3.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client3.png?raw=true)
 
     You are now connected as administrator to your Teamspeak server
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client4.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client4.png?raw=true)
 
     You might want now to:
     - Set encrypted voice communication globally on (right click on server -> Edit virtual server -> Security tab -> Channel voice encryption (bottom) )
@@ -110,13 +110,13 @@ It is based on:
 
 1. In your Teamspeak client, follow the instructions as shown on the following pictures:
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client1.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client1.png?raw=true)
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client2.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client2.png?raw=true)
 
     Enter the public IP address previously found, or your domain name if you have one.
 
-    ![](https://github.com/qdm12/teamspeak-docker/blob/master/readme/client5.png?raw=true)
+    ![](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client5.png?raw=true)
 
     You should now be connected to your Teamspeak server as before. Note that your credentials data is 
     stored on your computer so it won't ask you for the admin token or a password.
