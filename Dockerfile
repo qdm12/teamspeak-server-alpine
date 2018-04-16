@@ -16,7 +16,7 @@ RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 C.UTF-8 || true && \
     echo "export LANG=C.UTF-8" > /etc/profile.d/locale.sh && \
     apk del -q --progress --purge glibc-i18n glibc-bin && \
-    mkdir /teamspeak && \
+    mkdir -p /teamspeak/logs && \
     cd /teamspeak && \
     wget -q -O teamspeak.tgz http://dl.4players.de/ts/releases/3.1.1/teamspeak3-server_linux_amd64-3.1.1.tar.bz2 && \
     apk del -q --progress --purge wget && \
@@ -25,14 +25,12 @@ RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     touch .ts3server_license_accepted && \
     rm -rf teamspeak.tgz CHANGELOG LICENSE libts3db_mariadb.so doc redist serverquerydocs tsdns *.sh && \
     mkdir -p /data/logs && \
-    cd /data && \
-    touch ts3server.sqlitedb query_ip_blacklist.txt query_ip_whitelist.txt logs/.keep && \
+    touch /data/ts3server.sqlitedb /data/query_ip_blacklist.txt /data/query_ip_whitelist.txt /data/logs/.keep && \
     rm -rf /var/cache/apk/*
 VOLUME /data
 RUN ln -s /data/ts3server.sqlitedb /teamspeak/ts3server.sqlitedb && \
     ln -s /data/query_ip_blacklist.txt /teamspeak/query_ip_blacklist.txt && \
     ln -s /data/query_ip_whitelist.txt /teamspeak/query_ip_whitelist.txt && \
-    ln -s /data/logs /teamspeak/logs && \
     ln -s /data/logs/.keep /teamspeak/logs/.keep
 ENV LD_LIBRARY_PATH=/teamspeak
 EXPOSE 9987/udp 10011/tcp 30033/tcp

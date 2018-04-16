@@ -33,7 +33,8 @@ It is based on:
 1. Launch the server:
 
     ```bash
-    docker run -it --rm -p 9987:9987/udp -p 10011:10011/tcp -p 30033:30033/tcp -v /yourpath:/data qmcgaw/teamspeak3-alpine
+    docker run -it --rm -p 9987:9987/udp -p 10011:10011/tcp -p 30033:30033/tcp \
+    -v /yourpath:/data qmcgaw/teamspeak3-alpine
     ```
 
     You can also download  and use [*docker-compose.yml*](https://github.com/qdm12/teamspeak-server-alpine/blob/master/docker-compose.yml)
