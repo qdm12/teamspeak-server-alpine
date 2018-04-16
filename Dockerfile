@@ -25,7 +25,7 @@ RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     touch .ts3server_license_accepted && \
     rm -rf teamspeak.tgz CHANGELOG LICENSE libts3db_mariadb.so doc redist serverquerydocs tsdns *.sh && \
     mkdir -p /data && \
-    touch /data/ts3server.sqlitedb /data/query_ip_blacklist.txt /data/query_ip_whitelist.txt /data/logs/.keep && \
+    touch /data/ts3server.sqlitedb /data/query_ip_blacklist.txt /data/query_ip_whitelist.txt && \
     rm -rf /var/cache/apk/*
 VOLUME /data /teamspeak/logs
 RUN ln -s /data/ts3server.sqlitedb /teamspeak/ts3server.sqlitedb && \
