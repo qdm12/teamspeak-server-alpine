@@ -27,6 +27,7 @@ RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     mkdir -p /data/logs && \
     cd /data && \
     touch ts3server.sqlitedb query_ip_blacklist.txt query_ip_whitelist.txt && \
+    mkdir logs && \
     rm -rf /var/cache/apk/*
 VOLUME /data
 RUN ln -s /data/ts3server.sqlitedb /teamspeak/ts3server.sqlitedb && \

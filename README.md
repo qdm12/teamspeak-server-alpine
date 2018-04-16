@@ -30,12 +30,6 @@ It is based on:
 
 ## Running it
 
-1. Create a directory `logs` in `/yourpath` with (change `yourpath`):
-
-    ```bash
-    mkdir -p /yourpath/logs
-    ```
-
 1. Launch the server:
 
     ```bash
