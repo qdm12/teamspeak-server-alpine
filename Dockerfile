@@ -3,8 +3,8 @@ LABEL maintainer="quentin.mcgaw@gmail.com" \
       description="Lightweight TeamSpeak 3.1.1 server (Alpine, glibc)" \
       download="11.4MB" \
       size="22.6MB" \
-      ram="?MB" \
-      cpu_usage="?" \
+      ram="29MB" \
+      cpu_usage="Very Low to Low" \
       github="https://github.com/qdm12/teamspeak-docker"
 RUN apk add -q --progress --no-cache --update ca-certificates wget && \
     wget -q https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.27-r0/glibc-2.27-r0.apk \

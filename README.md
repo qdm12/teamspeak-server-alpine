@@ -20,7 +20,7 @@ Docker container running a lightweight Teamspeak 3.1.1 server
 
 | Download size | Image size | RAM usage | CPU usage |
 | --- | --- | --- | --- |
-| 11.4MB | 22.6MB | ?MB | ? |
+| 11.4MB | 22.6MB | 29MB | Very Low to Low |
 
 It is based on:
 - [Alpine 3.7](https://alpinelinux.org)
