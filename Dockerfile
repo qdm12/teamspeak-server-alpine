@@ -1,7 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer="quentin.mcgaw@gmail.com" \
       description="Lightweight TeamSpeak 3.1.1 server (Alpine, glibc)" \
-      download="?MB" \
+      download="11.4MB" \
       size="22.6MB" \
       ram="?MB" \
       cpu_usage="?" \
