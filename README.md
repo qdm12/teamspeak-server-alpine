@@ -1,8 +1,8 @@
-# Teamspeak 3 Server (based on Alpine and sgerrand/alpine-pkg-glibc)
+# Teamspeak 3.4.0 Server (based on Alpine and sgerrand/alpine-pkg-glibc)
 
-Docker container running a lightweight Teamspeak 3.3.0 server
+Docker container running a lightweight Teamspeak 3.4.0 server
 
-[![Docker Teamspeak 3.3.0](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
+[![Docker Teamspeak 3.4.0](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
 [![Build Status](https://travis-ci.org/qdm12/teamspeak-server-alpine.svg?branch=master)](https://travis-ci.org/qdm12/teamspeak-server-alpine)
 [![Docker Build Status](https://img.shields.io/docker/build/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
@@ -20,13 +20,13 @@ Docker container running a lightweight Teamspeak 3.3.0 server
 
 | Download size | Image size | RAM usage | CPU usage |
 | --- | --- | --- | --- |
-| 11.4MB | 22.6MB | 24.1MB | Very Low to Low |
+| 11.4MB | 24.1MB | 25MB | Very Low to Low |
 
 It is based on:
 - [Alpine 3.8](https://alpinelinux.org)
 - [**alpine-pkg-glibc**](https://github.com/sgerrand/alpine-pkg-glibc)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/edge/main/x86_64/ca-certificates)
-- [Teamspeak 3.3.3 amd64](https://www.teamspeak.com/en/downloads.html#server)
+- [Teamspeak 3.4.0 amd64](https://www.teamspeak.com/en/downloads.html#server)
 
 ## Running it
 
