@@ -1,14 +1,16 @@
 version: '3'
 services:
-    teamspeak:
-        image: qmcgaw/teamspeak3-alpine
-        container_name: teamspeak
-        volumes:
-            - /yourpath:/data
-            - /yourpath2:/teamspeak/logs
-        ports:
-            - 9987:9987/udp
-            - 10011:10011/tcp
-            - 30033:30033/tcp
-        network_mode: bridge
-        restart: always
+  teamspeak:
+    image: qmcgaw/teamspeak3-alpine
+    container_name: teamspeak
+    volumes:
+      - ./data:/data
+      - ./logs:/teamspeak/logs
+    network_mode: bridge
+    ports:
+      - 9987:9987/udp
+      - 10011:10011/tcp
+      - 30033:30033/tcp
+    command: |
+      license_accepted=1
+    restart: always
