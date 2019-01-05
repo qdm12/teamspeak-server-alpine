@@ -3,8 +3,8 @@ ARG ALPINE_VERSION=3.8
 FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.5.0
-ARG SHA256=b21185553e903390908d14542f3210d2077719cb9a1353a4189fbeef5b614ad7
+ARG VERSION=3.5.1
+ARG SHA256=9f95621a70ebd4822e1c918ccea15bfc8e83da15358c820422dda5a142ae79e1
 LABEL org.label-schema.schema-version="1.0.0-rc1" \
       maintainer="quentin.mcgaw@gmail.com" \
       org.label-schema.build-date=$BUILD_DATE \
