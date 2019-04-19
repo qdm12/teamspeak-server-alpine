@@ -1,10 +1,10 @@
-ARG ALPINE_VERSION=3.8
+ARG ALPINE_VERSION=3.9
 
 FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.5.1
-ARG SHA256=9f95621a70ebd4822e1c918ccea15bfc8e83da15358c820422dda5a142ae79e1
+ARG VERSION=3.7.1
+ARG SHA256=c82eebbe5dca9f33c8e52b0526fb92613f975c73463687e1561eefb79c0e5a69
 LABEL org.label-schema.schema-version="1.0.0-rc1" \
       maintainer="quentin.mcgaw@gmail.com" \
       org.label-schema.build-date=$BUILD_DATE \
@@ -17,7 +17,7 @@ LABEL org.label-schema.schema-version="1.0.0-rc1" \
       org.label-schema.docker.cmd.devel="docker run -it --rm -p 9987:9987/udp qmcgaw/teamspeak3-alpine license_accepted=1" \
       org.label-schema.docker.params="" \
       org.label-schema.version="$VERSION" \
-      image-size="19.1MB" \
+      image-size="21.3MB" \
       ram-usage="15MB" \
       cpu-usage="Low"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
