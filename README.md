@@ -31,7 +31,7 @@ It is based on:
 
 ## Features
 
-- Low size of **19.1MB**
+- Low size of **21.3MB**
 - Regular healthcheck
 - Runs without root
 - Minimalist (trimmed out mariadb option)
