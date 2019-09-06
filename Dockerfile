@@ -6,19 +6,17 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION=3.9.1
 ARG SHA256=cb612c26ee18fa0027119056f656ce449caf799f02c0f1864a14b68ea25ed239
-LABEL org.label-schema.schema-version="1.0.0-rc1" \
-    maintainer="quentin.mcgaw@gmail.com" \
-    org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="https://github.com/qdm12/teamspeak-server-alpine" \
-    org.label-schema.url="https://github.com/qdm12/teamspeak-server-alpine" \
-    org.label-schema.vcs-description="Light 19MB container running a Teamspeak 3 server" \
-    org.label-schema.vcs-usage="https://github.com/qdm12/teamspeak-server-alpine/blob/master/README.md#setup" \
-    org.label-schema.docker.cmd="docker run -d -p 9987:9987/udp -p 10011:10011/tcp -p 30033:30033/tcp -v $(pwd)/data:/teamspeak/data -v $(pwd)/logs:/teamspeak/logs qmcgaw/teamspeak3-alpine license_accepted=1" \
-    org.label-schema.docker.cmd.devel="docker run -it --rm -p 9987:9987/udp qmcgaw/teamspeak3-alpine license_accepted=1" \
-    org.label-schema.docker.params="" \
-    org.label-schema.version="$VERSION" \
-    image-size="21.4MB" \
+LABEL \
+    org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
+    org.opencontainers.image.created=$BUILD_DATE \
+    org.opencontainers.image.version="$VERSION" \
+    org.opencontainers.image.revision=$VCS_REF \
+    org.opencontainers.image.url="https://github.com/qdm12/teamspeak-server-alpine" \
+    org.opencontainers.image.documentation="https://github.com/qdm12/teamspeak-server-alpine/blob/master/README.md" \
+    org.opencontainers.image.source="https://github.com/qdm12/teamspeak-server-alpine" \
+    org.opencontainers.image.title="Teamspeak 3 Server" \
+    org.opencontainers.image.description="Light 19MB container running a Teamspeak 3 server" \
+    image-size="21.6MB" \
     ram-usage="15MB" \
     cpu-usage="Low"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
