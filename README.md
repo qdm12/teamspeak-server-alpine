@@ -20,14 +20,14 @@
 
 | Image size | RAM usage | CPU usage |
 | --- | --- | --- |
-| 21.4MB | 15MB | Low |
+| 21.6MB | 15MB | Low |
 
 It is based on:
 
 - [Alpine 3.10](https://alpinelinux.org)
 - [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
-- [Teamspeak 3.7.1 alpine](https://www.teamspeak.com/en/downloads.html#server)
+- [Teamspeak 3.9.1 alpine](https://www.teamspeak.com/en/downloads/#server)
 
 ## Features
 

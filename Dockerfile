@@ -4,8 +4,8 @@ ARG ALPINE_VERSION=3.10
 FROM ${BASE_IMAGE}:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.7.1
-ARG SHA256=c82eebbe5dca9f33c8e52b0526fb92613f975c73463687e1561eefb79c0e5a69
+ARG VERSION=3.9.1
+ARG SHA256=cb612c26ee18fa0027119056f656ce449caf799f02c0f1864a14b68ea25ed239
 LABEL org.label-schema.schema-version="1.0.0-rc1" \
     maintainer="quentin.mcgaw@gmail.com" \
     org.label-schema.build-date=$BUILD_DATE \
@@ -25,7 +25,7 @@ EXPOSE 9987/udp 10011/tcp 30033/tcp
 COPY entrypoint.sh /teamspeak/entrypoint.sh
 RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
     cd teamspeak && \
-    wget -O teamspeak.tar.bz2 http://dl.4players.de/ts/releases/$VERSION/teamspeak3-server_linux_alpine-$VERSION.tar.bz2 && \
+    wget -O teamspeak.tar.bz2 https://files.teamspeak-services.com/releases/server/$VERSION/teamspeak3-server_linux_alpine-$VERSION.tar.bz2 2>&1 && \
     echo "${SHA256}  teamspeak.tar.bz2" | sha256sum -c - && \
     tar xf teamspeak.tar.bz2 --strip-components=1 && \
     mkdir -p logs data lib && \
