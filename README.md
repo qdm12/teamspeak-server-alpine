@@ -31,7 +31,7 @@ It is based on:
 
 ## Features
 
-- Low size of **21.4MB**
+- Low size of **21.6MB**
 - Regular healthcheck
 - Runs without root
 - Minimalist (trimmed out mariadb option)
@@ -44,8 +44,7 @@ It is based on:
     ```bash
     mkdir -p data logs
     chown 1000 data logs
-    chmod 700 data
-    chmod 300 logs
+    chmod 700 data logs
     ```
 
     Note that you can set `chown` to another UID (i.e. `8000`) provided you run the container with `--user=8000`.
@@ -55,7 +54,7 @@ It is based on:
     - If you have a ARM 32 bit v6 architecture
 
         ```sh
-        docker build -t qmcgaw/REPONAME_DOCKER \
+        docker build -t qmcgaw/teamspeak3-alpine \
         --build-arg BASE_IMAGE=arm32v6/alpine \
         https://github.com/qdm12/teamspeak-server-alpine.git
         ```
@@ -63,7 +62,7 @@ It is based on:
     - If you have a ARM 32 bit v7 architecture
 
         ```sh
-        docker build -t qmcgaw/REPONAME_DOCKER \
+        docker build -t qmcgaw/teamspeak3-alpine \
         --build-arg BASE_IMAGE=arm32v7/alpine \
         https://github.com/qdm12/teamspeak-server-alpine.git
         ```
@@ -71,7 +70,7 @@ It is based on:
     - If you have a ARM 64 bit v8 architecture
 
         ```sh
-        docker build -t qmcgaw/REPONAME_DOCKER \
+        docker build -t qmcgaw/teamspeak3-alpine \
         --build-arg BASE_IMAGE=arm64v8/alpine \
         https://github.com/qdm12/teamspeak-server-alpine.git
         ```
