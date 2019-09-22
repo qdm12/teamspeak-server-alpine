@@ -1,6 +1,6 @@
 # Teamspeak 3.7.1 Server on Alpine
 
-21MB docker container running a Teamspeak 3.7.1 server
+21MB docker container running a Teamspeak 3.9.1 server
 
 [![Docker Teamspeak 3.4.0](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
@@ -104,11 +104,10 @@ It is based on:
 1. On your Docker host, enter
 
     ```bash
-    ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' '  -f 1
+    ip address
     ```
 
-    This is the LAN IP address of your Docker host and therefore of your Teamspeak server (in your LAN)
-
+    You can find your host LAN IP address to use to connect to the Teamspeak server.
 1. On your Docker host, enter the following:
 
     ```bash
@@ -125,7 +124,6 @@ It is based on:
     ```
 
     Copy the token `u3bJyR+ZcUJRxgJ+CKsJmQgygR+gMuPMz7qkyaQa` to identify as the administrator using the Teamspeak client.
-
 1. In your Teamspeak client, follow the instructions as shown on the following pictures:
 
     ![Client step 1](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client1.png?raw=true)
@@ -145,20 +143,11 @@ It is based on:
     - Set a password
     - Set permissions
     - Set up and modify channels
-
-1. On your Docker host, enter
-
-    ```bash
-    netstat -nr | awk '$1 == "0.0.0.0"{print$2}'
-    ```
-
-    This is the LAN IP address of your router. Now access it in your web browser (usually [http://192.168.1.1](http://192.168.1.1)).
-
+1. Find your router LAN IP address and access it with your web browser, usually at [http://192.168.1.1](http://192.168.1.1).
 1. Forward the following ports on your router:
     - TCP 10011 -> 10011 for your Docker host
     - TCP 30033 -> 30033 for your Docker host
     - UDP 9987 -> 9987 for your Docker host
-
 1. On your Docker host, enter
 
     ```bash
@@ -166,7 +155,6 @@ It is based on:
     ```
 
     This is the public IP address of your Docker host and therefore of your Teamspeak server for people outside your network
-
 1. In your Teamspeak client, follow the instructions as shown on the following pictures:
 
     ![Client step 5](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client1.png?raw=true)
@@ -178,7 +166,6 @@ It is based on:
     ![Client step 7](https://github.com/qdm12/teamspeak-server-alpine/blob/master/readme/client5.png?raw=true)
 
     You should now be connected to your Teamspeak server as before. Note that your credentials data is stored on your computer so it won't ask you for the admin token or a password.
-
 1. To share it with other people, give them your public IP address or domain name, and the password to access the server
 
 ## TODOs
