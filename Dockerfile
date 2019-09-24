@@ -20,9 +20,8 @@ LABEL \
     ram-usage="15MB" \
     cpu-usage="Low"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
-COPY entrypoint.sh /teamspeak/entrypoint.sh
+WORKDIR /teamspeak
 RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
-    cd teamspeak && \
     wget -O teamspeak.tar.bz2 https://files.teamspeak-services.com/releases/server/$VERSION/teamspeak3-server_linux_alpine-$VERSION.tar.bz2 2>&1 && \
     echo "${SHA256}  teamspeak.tar.bz2" | sha256sum -c - && \
     tar xf teamspeak.tar.bz2 --strip-components=1 && \
@@ -32,13 +31,15 @@ RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
     touch data/ts3server.sqlitedb data/query_ip_blacklist.txt data/query_ip_whitelist.txt && \
     chown -R 1000 . && \
     chmod -R 400 * && \
-    chmod -R 500 ts3server entrypoint.sh lib sql && \
+    chmod -R 500 ts3server lib sql && \
     chmod 700 data data/ts3server.sqlitedb && \
     chmod 400 data/query* && \
     chmod 300 logs && \
     rm -rf /var/cache/apk/*
-USER 1000
 HEALTHCHECK --interval=120s --timeout=2s --start-period=15s --retries=1 \
     CMD [ "$(wget -qO- localhost:30033 2>&1)" = "wget: error getting response: Connection reset by peer" ] || exit 1
 ENTRYPOINT ["/teamspeak/entrypoint.sh"]
 CMD ["license_accepted=0"]
+COPY --chown=1000 entrypoint.sh entrypoint.sh
+USER 1000
+
