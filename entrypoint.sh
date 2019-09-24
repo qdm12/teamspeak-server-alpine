@@ -18,7 +18,6 @@ exitOnError(){
   fi
 }
 
-cd /teamspeak
 test -r data
 exitOnError $? "/teamspeak/data is not readable, please 'chown 1000 data && chmod 700 data' on your host"
 test -w data
@@ -26,9 +25,9 @@ exitOnError $? "/teamspeak/data is not writable, please 'chown 1000 data && chmo
 test -x data
 exitOnError $? "/teamspeak/data is not executable, please 'chown 1000 data && chmod 700 data' on your host"
 # If data is mounted and nothing is there
-[ ! -f data/ts3server.sqlitedb ] || touch data/ts3server.sqlitedb
-[ ! -f data/query_ip_blacklist.txt ] || touch data/query_ip_blacklist.txt
-[ ! -f data/query_ip_whitelist.txt ] || touch data/query_ip_whitelist.txt
+[ -f data/ts3server.sqlitedb ] || touch data/ts3server.sqlitedb
+[ -f data/query_ip_blacklist.txt ] || touch data/query_ip_blacklist.txt
+[ -f data/query_ip_whitelist.txt ] || touch data/query_ip_whitelist.txt
 test -r data/ts3server.sqlitedb
 exitOnError $? "/teamspeak/data/ts3server.sqlitedb is not readable, please 'chown 1000 data/ts3server.sqlitedb && chmod 700 data/ts3server.sqlitedb' on your host"
 test -w data/ts3server.sqlitedb
