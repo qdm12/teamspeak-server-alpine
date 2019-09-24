@@ -1,4 +1,4 @@
-# Teamspeak 3.7.1 Server on Alpine
+# Teamspeak 3.9.1 Server on Alpine
 
 21MB docker container running a Teamspeak 3.9.1 server
 
@@ -96,6 +96,12 @@ It is based on:
     ```bash
     docker-compose up -d
     ```
+
+**On the first run**, if your bind mounts contain no files, you will have likely to run on your host:
+
+```sh
+chmod 700 data/ts3server.sqlitedb
+```
 
 ## Connect to the server
 
