@@ -39,9 +39,9 @@ exitOnError $? "/teamspeak/data/query_ip_blacklist.txt is not readable, please '
 test -r data/query_ip_whitelist.txt
 exitOnError $? "/teamspeak/data/query_ip_whitelist.txt is not readable, please 'chown 1000 data/query_ip_whitelist.txt && chmod 400 data/query_ip_whitelist.txt' on your host"
 test -w logs
-exitOnError $? "/teamspeak/logs is not writable, please 'chown 1000 data/logs && chmod 300 logs' on your host"
+exitOnError $? "/teamspeak/logs is not writable, please 'chown 1000 data/logs && chmod 300 data/logs' on your host"
 test -x logs
-exitOnError $? "/teamspeak/logs is not executable, please 'chown 1000 data/logs && chmod 300 logs' on your host"
+exitOnError $? "/teamspeak/logs is not executable, please 'chown 1000 data/logs && chmod 300 data/logs' on your host"
 ln -sf data/ts3server.sqlitedb ts3server.sqlitedb
 exitOnError $? "Can't symlink /teamspeak/data/ts3server.sqlitedb to /teamspeak/ts3server.sqlitedb"
 ln -sf data/query_ip_blacklist.txt query_ip_blacklist.txt
