@@ -1,11 +1,10 @@
-ARG BASE_IMAGE=alpine
 ARG ALPINE_VERSION=3.10
 
-FROM ${BASE_IMAGE}:${ALPINE_VERSION}
+FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.9.1
-ARG SHA256=cb612c26ee18fa0027119056f656ce449caf799f02c0f1864a14b68ea25ed239
+ARG VERSION=3.11.0
+ARG SHA256=f93e96b556e11fc7b520416b6a22cde902ae12ef14a7f99b0107cde97ce48fc6
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$BUILD_DATE \
@@ -16,7 +15,7 @@ LABEL \
     org.opencontainers.image.source="https://github.com/qdm12/teamspeak-server-alpine" \
     org.opencontainers.image.title="Teamspeak 3 Server" \
     org.opencontainers.image.description="Light 19MB container running a Teamspeak 3 server" \
-    image-size="21.6MB" \
+    image-size="22.3MB" \
     ram-usage="15MB" \
     cpu-usage="Low"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
@@ -41,5 +40,6 @@ HEALTHCHECK --interval=120s --timeout=2s --start-period=15s --retries=1 \
 ENTRYPOINT ["/teamspeak/entrypoint.sh"]
 CMD ["license_accepted=0"]
 COPY --chown=1000 entrypoint.sh entrypoint.sh
+RUN chmod 500 entrypoint.sh
 USER 1000
 

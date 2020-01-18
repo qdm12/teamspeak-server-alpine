@@ -20,18 +20,18 @@
 
 | Image size | RAM usage | CPU usage |
 | --- | --- | --- |
-| 21.6MB | 15MB | Low |
+| 22.3MB | 15MB | Low |
 
 It is based on:
 
 - [Alpine 3.10](https://alpinelinux.org)
 - [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
-- [Teamspeak 3.9.1 alpine](https://www.teamspeak.com/en/downloads/#server)
+- [Teamspeak 3.11.0 alpine](https://www.teamspeak.com/en/downloads/#server)
 
 ## Features
 
-- Low size of **21.6MB**
+- Low size
 - Regular healthcheck
 - Runs without root
 - Minimalist (trimmed out mariadb option)
@@ -51,29 +51,11 @@ It is based on:
 
 1. <details><summary>CLICK IF YOU HAVE AN ARM DEVICE</summary><p>
 
-    - If you have a ARM 32 bit v6 architecture
+    Install `git` and build the image with:
 
-        ```sh
-        docker build -t qmcgaw/teamspeak3-alpine \
-        --build-arg BASE_IMAGE=arm32v6/alpine \
-        https://github.com/qdm12/teamspeak-server-alpine.git
-        ```
-
-    - If you have a ARM 32 bit v7 architecture
-
-        ```sh
-        docker build -t qmcgaw/teamspeak3-alpine \
-        --build-arg BASE_IMAGE=arm32v7/alpine \
-        https://github.com/qdm12/teamspeak-server-alpine.git
-        ```
-
-    - If you have a ARM 64 bit v8 architecture
-
-        ```sh
-        docker build -t qmcgaw/teamspeak3-alpine \
-        --build-arg BASE_IMAGE=arm64v8/alpine \
-        https://github.com/qdm12/teamspeak-server-alpine.git
-        ```
+    ```sh
+    docker build -t qmcgaw/teamspeak3-alpine https://github.com/qdm12/teamspeak-server-alpine.git
+    ```
 
     </p></details>
 
