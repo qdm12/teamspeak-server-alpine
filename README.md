@@ -35,7 +35,7 @@ It is based on:
 - Regular healthcheck
 - Runs without root
 - Minimalist (trimmed out mariadb option)
-- Compatible with ARM
+- *Only compatible with amd64 because Teamspeak is only built for amd64*
 
 ## Setup
 
@@ -48,16 +48,6 @@ It is based on:
     ```
 
     Note that you can set `chown` to another UID (i.e. `8000`) provided you run the container with `--user=8000`.
-
-1. <details><summary>CLICK IF YOU HAVE AN ARM DEVICE</summary><p>
-
-    Install `git` and build the image with:
-
-    ```sh
-    docker build -t qmcgaw/teamspeak3-alpine https://github.com/qdm12/teamspeak-server-alpine.git
-    ```
-
-    </p></details>
 
 1. Use the following command:
 
