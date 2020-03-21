@@ -3,8 +3,8 @@ ARG ALPINE_VERSION=3.10
 FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.11.0
-ARG SHA256=f93e96b556e11fc7b520416b6a22cde902ae12ef14a7f99b0107cde97ce48fc6
+ARG VERSION=3.12.0
+ARG SHA256=6f414b427f43aef5a0ab95e0b996b7ba9620ad7b0017fff8c9bdb2855beef066
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$BUILD_DATE \
