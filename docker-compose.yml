@@ -4,7 +4,7 @@ services:
     image: qmcgaw/teamspeak3-alpine
     container_name: teamspeak
     volumes:
-      - ./data:/data
+      - ./data:/teamspeak/data
       - ./logs:/teamspeak/logs
     network_mode: bridge
     ports:
