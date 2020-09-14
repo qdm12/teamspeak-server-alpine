@@ -1,6 +1,6 @@
 # Teamspeak 3.12 Server on Alpine
 
-21MB docker container running a Teamspeak 3.12 server
+23MB docker container running a Teamspeak 3.12.1 server
 
 [![Docker Teamspeak 3.12](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
@@ -18,16 +18,12 @@
 [![Image size](https://images.microbadger.com/badges/image/qmcgaw/teamspeak3-alpine.svg)](https://microbadger.com/images/qmcgaw/teamspeak3-alpine)
 [![Image version](https://images.microbadger.com/badges/version/qmcgaw/teamspeak3-alpine.svg)](https://microbadger.com/images/qmcgaw/teamspeak3-alpine)
 
-| Image size | RAM usage | CPU usage |
-| --- | --- | --- |
-| 22.3MB | 15MB | Low |
-
 It is based on:
 
-- [Alpine 3.10](https://alpinelinux.org)
+- [Alpine 3.12](https://alpinelinux.org)
 - [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
-- [Teamspeak 3.12.0 alpine](https://www.teamspeak.com/en/downloads/#server)
+- [Teamspeak 3.12.1 alpine](https://www.teamspeak.com/en/downloads/#server)
 
 ## Features
 

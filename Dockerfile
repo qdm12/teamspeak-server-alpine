@@ -1,10 +1,10 @@
-ARG ALPINE_VERSION=3.10
+ARG ALPINE_VERSION=3.12
 
 FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=3.12.0
-ARG SHA256=6f414b427f43aef5a0ab95e0b996b7ba9620ad7b0017fff8c9bdb2855beef066
+ARG VERSION=3.12.1
+ARG SHA256=b1d5876854992bf9f5d7bc6b12be71bee9bfe90185b78c74bc50ed5a02f360a2
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$BUILD_DATE \
@@ -14,10 +14,7 @@ LABEL \
     org.opencontainers.image.documentation="https://github.com/qdm12/teamspeak-server-alpine/blob/master/README.md" \
     org.opencontainers.image.source="https://github.com/qdm12/teamspeak-server-alpine" \
     org.opencontainers.image.title="Teamspeak 3 Server" \
-    org.opencontainers.image.description="Light 19MB container running a Teamspeak 3 server" \
-    image-size="22.3MB" \
-    ram-usage="15MB" \
-    cpu-usage="Low"
+    org.opencontainers.image.description="Light 23MB container running a Teamspeak 3 server"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
 WORKDIR /teamspeak
 RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
@@ -42,4 +39,3 @@ CMD ["license_accepted=0"]
 COPY --chown=1000 entrypoint.sh entrypoint.sh
 RUN chmod 500 entrypoint.sh
 USER 1000
-
