@@ -4,8 +4,7 @@
 
 [![Docker Teamspeak 3.13](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
-[![Build Status](https://travis-ci.org/qdm12/teamspeak-server-alpine.svg?branch=master)](https://travis-ci.org/qdm12/teamspeak-server-alpine)
-[![Docker Build Status](https://img.shields.io/docker/build/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
+[![Build status](https://github.com/qdm12/teamspeak-server-alpine/workflows/Buildx%20latest/badge.svg)](https://github.com/qdm12/teamspeak-server-alpine/actions?query=workflow%3A%22Buildx+latest%22)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues)
