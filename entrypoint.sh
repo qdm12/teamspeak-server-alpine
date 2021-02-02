@@ -53,3 +53,4 @@ status=$?
 printf "\n =========================================\n"
 printf " Exit with status $status\n"
 printf " =========================================\n"
+exit $status
