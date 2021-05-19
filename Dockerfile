@@ -4,7 +4,7 @@ FROM alpine:${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VERSION
 ARG VCS_REF
-ARG TEAMSPEAK_VERSION=3.13.3
+ARG TEAMSPEAK_VERSION=3.13.5
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$BUILD_DATE \

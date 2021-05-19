@@ -1,6 +1,6 @@
 # Teamspeak 3.13 Server on Alpine
 
-23MB docker container running a Teamspeak 3.13.3 server
+23MB docker container running a Teamspeak 3.13.5 server
 
 [![Docker Teamspeak 3.13](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
@@ -22,7 +22,7 @@ It is based on:
 - [Alpine 3.12](https://alpinelinux.org)
 - [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
-- [Teamspeak 3.13.3 alpine](https://www.teamspeak.com/en/downloads/#server)
+- [Teamspeak 3.13.5 alpine](https://www.teamspeak.com/en/downloads/#server)
 
 ## Features
 
