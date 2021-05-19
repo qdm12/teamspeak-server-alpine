@@ -11,6 +11,6 @@ services:
       - 9987:9987/udp
       - 10011:10011/tcp
       - 30033:30033/tcp
-    command: |
-      license_accepted=1
+    environment:
+      #- TS3SERVER_LICENSE=accept
     restart: always

@@ -48,8 +48,9 @@ It is based on:
 
     ```bash
     docker run -d -p 9987:9987/udp -p 10011:10011/tcp -p 30033:30033/tcp \
+    -e TS3SERVER_LICENSE=accept \
     -v $(pwd)/data:/teamspeak/data -v $(pwd)/logs:/teamspeak/logs \
-    qmcgaw/teamspeak3-alpine license_accepted=1
+    qmcgaw/teamspeak3-alpine
     ```
 
     - The UDP port 9987 is used for the main voice server

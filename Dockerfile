@@ -34,7 +34,7 @@ RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
 HEALTHCHECK --interval=120s --timeout=2s --start-period=15s --retries=1 \
     CMD [ "$(wget -qO- localhost:30033 2>&1)" = "wget: error getting response: Connection reset by peer" ] || exit 1
 ENTRYPOINT ["/teamspeak/entrypoint.sh"]
-CMD ["license_accepted=0"]
+ENV TS3SERVER_LICENSE=
 COPY --chown=1000 entrypoint.sh entrypoint.sh
 RUN chmod 500 entrypoint.sh
 USER 1000
