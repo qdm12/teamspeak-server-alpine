@@ -5,7 +5,6 @@ ARG BUILD_DATE
 ARG VERSION
 ARG VCS_REF
 ARG TEAMSPEAK_VERSION=3.13.3
-ARG SHA256=b4134aeba964782e10c22dcb96b6de4c96e558965e9d5ed9b0db47e648ad1498
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$BUILD_DATE \
@@ -20,7 +19,6 @@ EXPOSE 9987/udp 10011/tcp 30033/tcp
 WORKDIR /teamspeak
 RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
     wget -qO teamspeak.tar.bz2 https://files.teamspeak-services.com/releases/server/$TEAMSPEAK_VERSION/teamspeak3-server_linux_alpine-$TEAMSPEAK_VERSION.tar.bz2 && \
-    echo "${SHA256}  teamspeak.tar.bz2" | sha256sum -c - && \
     tar xf teamspeak.tar.bz2 --strip-components=1 && \
     mkdir -p logs data lib && \
     mv *.so lib && \
