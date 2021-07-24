@@ -139,6 +139,30 @@ chmod 700 data/ts3server.sqlitedb
     You should now be connected to your Teamspeak server as before. Note that your credentials data is stored on your computer so it won't ask you for the admin token or a password.
 1. To share it with other people, give them your public IP address or domain name, and the password to access the server
 
+## Expired license
+
+If you get a message similar to:
+
+```log
+The default license has expired. Please use the latest server version
+```
+
+Then you can try first pulling the lates image `docker pull qmcgaw/teamspeak3-alpine` or build it yourself.
+
+To build yourself:
+
+1. Check out which server version you want from [files.teamspeak-services.com/releases/server/](https://files.teamspeak-services.com/releases/server/)
+1. Make sure you have `git` installed
+1. Run this build command (which is also quick):
+
+    ```sh
+    docker build --build-arg TEAMSPEAK_VERSION=3.13.6 \
+    -t qmcgaw/teamspeak3-alpine \
+    https://github.com/qdm12/teamspeak-server-alpine.git
+    ```
+
+    You can also specify the build argument `--build-arg ALPINE_VERSION=3.14` if you want.
+
 ## TODOs
 
 - [ ] Env variables
