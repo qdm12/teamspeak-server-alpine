@@ -14,10 +14,9 @@
 [![Docker Stars](https://img.shields.io/docker/stars/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 [![Docker Automated](https://img.shields.io/docker/automated/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
-
 It is based on:
 
-- [Alpine 3.12](https://alpinelinux.org)
+- [Alpine 3.13](https://alpinelinux.org)
 - [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
 - [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
 - [Teamspeak 3.13.5 alpine](https://www.teamspeak.com/en/downloads/#server)
