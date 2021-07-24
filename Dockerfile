@@ -4,7 +4,7 @@ FROM alpine:${ALPINE_VERSION}
 ARG CREATED
 ARG VERSION
 ARG COMMIT
-ARG TEAMSPEAK_VERSION=3.13.5
+ARG TEAMSPEAK_VERSION=3.13.6
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
     org.opencontainers.image.created=$CREATED \
