@@ -3,25 +3,15 @@ on:
   push:
     paths:
       - .github/workflows/ci.yml
-      - cmd/**
-      - internal/**
-      - pkg/**
       - .dockerignore
-      - .golangci.yml
       - Dockerfile
-      - go.mod
-      - go.sum
+      - entrypoint.sh
   pull_request:
     paths:
       - .github/workflows/ci.yml
-      - cmd/**
-      - internal/**
-      - pkg/**
       - .dockerignore
-      - .golangci.yml
       - Dockerfile
-      - go.mod
-      - go.sum
+      - entrypoint.sh
 
 jobs:
   verify:
