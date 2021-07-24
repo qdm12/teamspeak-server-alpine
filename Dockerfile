@@ -17,8 +17,9 @@ LABEL \
     org.opencontainers.image.description="Light 23MB container running a Teamspeak 3 server"
 EXPOSE 9987/udp 10011/tcp 30033/tcp
 WORKDIR /teamspeak
-RUN apk --update --no-cache --progress -q add ca-certificates libstdc++ && \
+RUN apk --update --no-cache --progress -q add ca-certificates wget libstdc++ && \
     wget -qO teamspeak.tar.bz2 https://files.teamspeak-services.com/releases/server/$TEAMSPEAK_VERSION/teamspeak3-server_linux_alpine-$TEAMSPEAK_VERSION.tar.bz2 && \
+    apk del wget && \
     tar xf teamspeak.tar.bz2 --strip-components=1 && \
     mkdir -p logs data lib && \
     mv *.so lib && \
