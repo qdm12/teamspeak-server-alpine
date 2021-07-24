@@ -4,15 +4,26 @@
 
 [![Docker Teamspeak 3.13](https://github.com/qdm12/teamspeak-server-alpine/raw/master/readme/title.png)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
-[![Build status](https://github.com/qdm12/teamspeak-server-alpine/workflows/CI/badge.svg)](https://github.com/qdm12/teamspeak-server-alpine/actions?query=workflow%3ACI)
+[![Build status](https://github.com/qdm12/teamspeak-server-alpine/actions/workflows/ci.yml/badge.svg)](https://github.com/qdm12/teamspeak-server-alpine/actions/workflows/ci.yml)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues)
+[![dockeri.co](https://dockeri.co/image/qmcgaw/teamspeak3-alpine)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
+
+![Last release](https://img.shields.io/github/release/qdm12/teamspeak-server-alpine?label=Last%20release)
+![Last Docker tag](https://img.shields.io/docker/v/qmcgaw/teamspeak3-alpine?sort=semver&label=Last%20Docker%20tag)
+[![Last release size](https://img.shields.io/docker/image-size/qmcgaw/teamspeak3-alpine?sort=semver&label=Last%20released%20image)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine/tags?page=1&ordering=last_updated)
+![GitHub last release date](https://img.shields.io/github/release-date/qdm12/teamspeak-server-alpine?label=Last%20release%20date)
+![Commits since release](https://img.shields.io/github/commits-since/qdm12/teamspeak-server-alpine/latest?sort=semver)
+
+[![Latest size](https://img.shields.io/docker/image-size/qmcgaw/teamspeak3-alpine/latest?label=Latest%20image)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine/tags)
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/commits/master)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/graphs/contributors)
+[![GitHub closed PRs](https://img.shields.io/github/issues-pr-closed/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/pulls?q=is%3Apr+is%3Aclosed)
 [![GitHub issues](https://img.shields.io/github/issues/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/qdm12/teamspeak-server-alpine.svg)](https://github.com/qdm12/teamspeak-server-alpine/issues?q=is%3Aissue+is%3Aclosed)
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
-[![Docker Stars](https://img.shields.io/docker/stars/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
-[![Docker Automated](https://img.shields.io/docker/automated/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
+[![MIT](https://img.shields.io/github/license/qdm12/teamspeak-server-alpine)](https://github.com/qdm12/teamspeak-server-alpine/master/LICENSE)
+![Visitors count](https://visitor-badge.laobi.icu/badge?page_id=teamspeak-server-alpine.readme)
 
 It is based on:
 
