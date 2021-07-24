@@ -17,8 +17,8 @@
 It is based on:
 
 - [Alpine 3.14](https://alpinelinux.org)
-- [libstdc++](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/libstdc++)
-- [CA-Certificates](https://pkgs.alpinelinux.org/package/3.10/main/x86_64/ca-certificates)
+- [libstdc++](https://pkgs.alpinelinux.org/package/3.14/main/x86_64/libstdc++)
+- [CA-Certificates](https://pkgs.alpinelinux.org/package/3.14/main/x86_64/ca-certificates)
 - [Teamspeak 3.13.6 alpine](https://www.teamspeak.com/en/downloads/#server)
 
 ## Features
