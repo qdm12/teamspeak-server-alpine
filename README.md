@@ -14,8 +14,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 [![Docker Automated](https://img.shields.io/docker/automated/qmcgaw/teamspeak3-alpine.svg)](https://hub.docker.com/r/qmcgaw/teamspeak3-alpine)
 
-[![Image size](https://images.microbadger.com/badges/image/qmcgaw/teamspeak3-alpine.svg)](https://microbadger.com/images/qmcgaw/teamspeak3-alpine)
-[![Image version](https://images.microbadger.com/badges/version/qmcgaw/teamspeak3-alpine.svg)](https://microbadger.com/images/qmcgaw/teamspeak3-alpine)
 
 It is based on:
 
