@@ -3,7 +3,7 @@ ARG ALPINE_VERSION=3.12
 FROM alpine:${ALPINE_VERSION}
 ARG CREATED
 ARG VERSION
-ARG VCS_REF
+ARG COMMIT
 ARG TEAMSPEAK_VERSION=3.13.5
 LABEL \
     org.opencontainers.image.authors="quentin.mcgaw@gmail.com" \
